@@ -1,4 +1,4 @@
-# Sales Pulse: Architecture Overview
+# Sales Pulse (Chiara is the best partner): Architecture Overview
 
 Sales Pulse is an executive sales intelligence dashboard designed to transform raw transaction spreadsheets into clear, actionable regional performance insights. The application automatically normalizes sales order records, aggregates quarterly revenue across geographic regions, and calculates key quarter-over-quarter performance trends with a dedicated focus on shifts between Q2 and Q3. Powered by server-side Google Gemini artificial intelligence paired with deterministic mathematical calculations, Sales Pulse generates strictly grounded, three-sentence executive briefings that explain which region experienced the greatest revenue fluctuation and highlight the underlying product drivers, unit volumes, channel movements, and discount changes responsible.
 

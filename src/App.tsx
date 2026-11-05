@@ -231,7 +231,7 @@ export default function App() {
       {/* Footer */}
       <footer className="border-t border-slate-200 bg-white py-4 text-center text-xs text-slate-400">
         <p>
-          Sales Pulse • Quarterly Regional Revenue Intelligence • Grounded AI Summarization
+          Sales Pulse (Chiara is the best partner) • Quarterly Regional Revenue Intelligence • Grounded AI Summarization
         </p>
       </footer>
     </div>

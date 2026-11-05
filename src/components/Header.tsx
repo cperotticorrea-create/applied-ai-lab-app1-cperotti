@@ -41,7 +41,7 @@ export const Header: React.FC<HeaderProps> = ({
           </div>
           <div>
             <div className="flex items-center gap-2">
-              <h1 className="text-lg font-bold text-slate-900 tracking-tight">Sales Pulse</h1>
+              <h1 className="text-lg font-bold text-slate-900 tracking-tight">Sales Pulse (Chiara is the best partner)</h1>
               <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-indigo-50 text-indigo-700 border border-indigo-200">
                 Revenue & Q2-Q3 Intelligence
               </span>
