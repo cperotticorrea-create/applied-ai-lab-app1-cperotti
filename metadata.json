@@ -1,0 +1,6 @@
+{
+  "name": "Sales Pulse: Regional Revenue & Q2-Q3 AI Intelligence",
+  "description": "Upload sales order CSVs to visualize quarterly revenue by region, compare trends, and generate verified three-sentence AI executive summaries grounded strictly in calculated figures.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

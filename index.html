@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script>
+      // Suppress Vite HMR / WebSocket rejection when HMR is disabled in preview environment
+      window.addEventListener('unhandledrejection', function (e) {
+        var reason = e.reason;
+        var msg = reason && (reason.message || String(reason)) || '';
+        var stack = (reason && reason.stack) || '';
+        if (
+          msg.indexOf('WebSocket') !== -1 ||
+          msg.indexOf('ws:') !== -1 ||
+          stack.indexOf('@vite/client') !== -1
+        ) {
+          e.preventDefault();
+          e.stopPropagation();
+        }
+      });
+      window.addEventListener('error', function (e) {
+        var msg = e.message || '';
+        var filename = e.filename || '';
+        if (
+          msg.indexOf('WebSocket') !== -1 ||
+          filename.indexOf('@vite/client') !== -1
+        ) {
+          e.preventDefault();
+          e.stopPropagation();
+        }
+      });
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sales Pulse: Regional Revenue & Q2-Q3 AI Intelligence</title>
+    <meta name="description" content="Upload sales order CSVs to visualize quarterly revenue by region, compare trends, and generate verified three-sentence AI executive summaries grounded strictly in calculated figures." />
+    <meta property="og:title" content="Sales Pulse: Regional Revenue & Q2-Q3 AI Intelligence" />
+    <meta property="og:description" content="Upload sales order CSVs to visualize quarterly revenue by region, compare trends, and generate verified three-sentence AI executive summaries grounded strictly in calculated figures." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
